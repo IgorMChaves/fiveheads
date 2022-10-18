@@ -68,8 +68,8 @@
          <main>
         <div class="swiffy-slider">
             <ul class="slider-container">
-                <li><img src="../../images/image24.png" alt="strangerthings"></li>
-                <li><img src="../../images/image23.png" alt="euphoria"></li>
+                <li><img src="../../images/hotd.jpg" alt="hotd"></li>
+                <li><img src="../../images/pizza.jpg" alt="pizza"></li>
                 <li><img src="../../images/image25.png" alt="it"></li>
             </ul>
             <button type="button" class="slider-nav"></button>
@@ -82,26 +82,26 @@
         </div>
         <div class="quadros">
             <div class="quadradodestaques">
-                <div class="quadradodonomedestasques">luluzinha
+                <div class="quadradodonomedestasques">
                     <h1>Destaques</h1>
                 </div>
                 <article class="primeirofilme">
-                    <a href="./luluzinha.html">
+                    <a href="obra/3">
                         <div class="imagem">
-                        <img src="../../images/luluzinha.png" alt="Luluzinha">
+                        <img src="../../imagens/casa.jpg">
                         </div>
                         <div class="data">
-                            <h3>Luluzinha <br> (2011)</h3>
+                            <h3>A Casa do Dragão<br> (2022)</h3>
                         </div>
                     </a>
                 </article>
                 <article class="primeirofilme">
-                    <a href="./heartstopper.html">
+                    <a href="/obra/4">
                         <div class="imagem">
                             <img src="../../images/heartstopper.png" alt="Luluzinha">
                         </div>
                         <div class="data">
-                            <h3>heartstopper <br> (2021)</h3>
+                            <h3>Adoráveis Mulheres <br> (2019)</h3>
                         </div>
                     </a>
                     <div class="mostrarmais">
