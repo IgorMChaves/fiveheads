@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    border-bottom: 0.5rem solid var(--secondary);
+}
+
+body {
+    background-image: url('../../images/loginD.png');
+}
+
+.mt-4 {
+    text-decoration-color: white;
+    color: #004770;
+}
+
+.w-full {
+    background-color: #23353E;
+}
+
+.block mt-1 w-full {
+    color: white;
+}
+
+.nome {
+    color: white;
+}
+.underline {
+    color: white
+}
+
+.block {
+    color: white;
+}

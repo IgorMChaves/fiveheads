@@ -1,0 +1,34 @@
+<p class="card-text"><strong>Título:</strong> {{$foto->nomeObra}}</p><br>
+                        <p class="card-text"><strong>Lançamento:</strong> {{$foto->data}}</p><br>
+                        <p class="card-text"><strong>Duração:</strong> {{$foto->duracao}}</p><br>
+                        <p class="card-text"><strong>Sinopse:</strong> {{$foto->sinopse}}</p><br>
+                        <p class="card-text"><strong>Elenco:</strong> {{$foto->elenco}}</p><br>
+                        <p class="card-text"><strong>Produção:</strong> {{$foto->producao}}</p>
+
+
+                        <div class="album py-5 bg-light">
+                            <div class="container">
+                              <div class="row">
+                                @foreach($comentario as $comentario)
+                                    <div class="col-md-4">
+                                      <div class="card mb-4 shadow-sm">
+                                        <div class="card-body">
+                                          <p class="card-text"><strong>Título:</strong> {{$foto->nomeObra}}</p>
+                                          <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                            <a type="button" class="btn btn-sm btn-outline-secondary" href="/filmes/{{$foto->id}}/edit">Editar</a>
+                                              <form method="POST" action="filmes/{{$foto->id}}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-sm btn-outline-danger">Apagar</button>
+                                              </form>
+                                              <a type="button" class="btn btn-sm btn-outline-primary" href="/obra/{{$foto->id}}">+</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                @endforeach
+                              </div>
+                            </div>
+                          </div>
