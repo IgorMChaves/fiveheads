@@ -159,4 +159,12 @@ class ControladorFoto extends Controller
         $foto->delete();
         return redirect("/filmes");
     }
+
+    public function search(Request $request)
+    {
+
+       $foto = Foto::where('nomeObra', '=', $request->search)
+                    ->paginate();
+        return view("/admin/home-admin", compact('foto'));
+    }
 }

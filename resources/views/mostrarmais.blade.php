@@ -78,7 +78,7 @@
         <div class="container">
           <div class="row">
             @foreach($foto as $foto)
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="card mb-4 shadow-sm">
                     <img class="card-img-top figure-img img-fluid rounded" src="/storage/{{$foto->arquivo}}" class="showImg"></img>
                     <div class="card-body">
@@ -95,7 +95,7 @@
             @endforeach
           </div>
         </div>
-      </div>
+    </div>
     </main>
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
     <script type="text/javascript">

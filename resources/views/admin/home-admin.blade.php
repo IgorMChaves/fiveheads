@@ -46,7 +46,8 @@
       <section>
         <div class="btn-group">
           <a type="button" class="btn1 btn-sm btn-outline-primary" href="/formulario">Cadastrar um novo filme</a>
-          <form method="GET">
+          <form action="{{route('foto.search')}}" method="POST">
+            @csrf
             <div class="d-flex justify-content-between align-items-right">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
                 <input type="text" name="busca" class="form-control" placeholder="Buscar por título"></input>
               <div class="col d.flex align-items-end">
@@ -57,7 +58,7 @@
         </div>
       </section>
     </div>
-    <main role="main">
+    <main class="main">
     <br>
         <div class="album py-5 bg-secondary">
         <div class="container">
@@ -99,13 +100,5 @@
         </p>
       </div>
     </footer>
-    <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
-    <script type="text/javascript">
-      $("#arquivo").blur(function(){
-          var nomeCompleto = document.getElementById('arquivo').value;
-          var nome = nomeCompleto.split("\\").pop();
-          $("#RotuloArquivo").text(nomeCompleto);
-      });
-    </script>
 </body>
 </html>

@@ -43,7 +43,7 @@
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Cadastre um conteúdo</h1>
+          <h1 class="jumbotron-heading">Editar</h1>
           <form method="POST" action="{{url('filmes',$foto->id)}}" enctype="multipart/form-data">
             @csrf
             @method('PUT')

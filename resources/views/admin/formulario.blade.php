@@ -42,7 +42,7 @@
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Cadastre um conteúdo</h1>
+          <h1 class="jumbotron-heading">Cadastre um filme</h1>
           <form method="POST" action="/filmes" enctype="multipart/form-data">
             @csrf
             <div class="form-group text-left">

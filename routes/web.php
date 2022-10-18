@@ -64,3 +64,5 @@ Route::get('/obra/{foto}', [App\Http\Controllers\ControladorFoto::class, 'show']
 Route::get('/mostrarmais', [App\Http\Controllers\ControladorFoto::class, 'indexmais']);
 Route::post('/mostrarmais', [App\Http\Controllers\ControladorFoto::class, 'storemais']);
 
+/* Rotas seearch*/
+Route::post('/filmes/search', [App\Http\Controllers\ControladorFoto::class, 'search']) -> name ('foto.search') ;
