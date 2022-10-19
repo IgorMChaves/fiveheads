@@ -80,7 +80,7 @@
             @foreach($foto as $foto)
                 <div class="col-md-3">
                   <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top figure-img img-fluid rounded" src="/storage/{{$foto->arquivo}}" class="showImg"></img>
+                    <img src="/storage/{{$foto->arquivo}}" class="showImg"></img>
                     <div class="card-body">
                       <h5 class="card-text"><strong>{{$foto->nomeObra}}</strong></h5>
                       <h5 class="card-text"><strong>{{$foto->data}}</strong></h5>
@@ -143,6 +143,12 @@ h1 {
     font-size: 1.5rem;
     font-family: sans-serif;
 }
+
+.showImg{
+    width: 500px;
+    height: 380px;
+
+}
 .iconPer{
     position: absolute;
     left: 79.15%;
@@ -163,8 +169,6 @@ h1 {
 }
 
 main{
-    display: grid;
-    grid-template-columns: auto auto;
 }
 
 h2 {

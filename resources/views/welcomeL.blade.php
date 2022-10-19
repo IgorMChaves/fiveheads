@@ -68,7 +68,7 @@
          <main>
         <div class="swiffy-slider">
             <ul class="slider-container">
-                <li><img src="../../images/hotd.jpg" alt="hotd"></li>
+                <li><img src="../../images/strangerT.png" alt="hotd"></li>
                 <li><img src="../../images/pizza.jpg" alt="pizza"></li>
                 <li><img src="../../images/image25.png" alt="it"></li>
             </ul>
@@ -96,7 +96,7 @@
                     </a>
                 </article>
                 <article class="primeirofilme">
-                    <a href="/obra/4">
+                    <a href="/obra/1">
                         <div class="imagem">
                             <img src="../../images/heartstopper.png" alt="Luluzinha">
                         </div>
