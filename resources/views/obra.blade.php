@@ -34,24 +34,27 @@
             </div>
             <div class="tags">
                 <ul>
-                    <li>
-                        <a href="Acao.html">Ação</a>
-                    </li>
-                    <li>
-                        <a href="Comedia.html">Comedia</a>
-                    </li>
-                    <li>
-                        <a href="Sliceoflife.html">Slice of life</a>
-                    </li>
-                    <li>
-                        <a href="Terror.html">Terror</a>
-                    </li>
-                    <li>
-                        <a href="Scifi.html">Sci - fi</a>
-                    </li>
-                    <li>
-                        <a href="">Mais</a>
-                    </li>
+                <li>
+                            <a href="/acao">Ação</a>
+                        </li>
+                        <li>
+                            <a href="/comedia">Comedia</a>
+                        </li>
+                        <li>
+                            <a href="/sci-fi">Sci-fi</a>
+                        </li>
+                        <li>
+                            <a href="/drama">Drama</a>
+                        </li>
+                        <li>
+                            <a href="/terror">Terror</a>
+                        </li>
+                        <li>
+                            <a href="/fantasia">Fantasia</a>
+                        </li>
+                        <li>
+                            <a href="/mostrarmais">Mais</a>
+                        </li>
                 </ul>
             </div>
         </div>
@@ -85,6 +88,8 @@
                         <p class="card-text"><strong>Elenco:</strong> {{$foto->elenco}}</p>
                         <hr size="50">
                         <p class="card-text"><strong>Produção:</strong> {{$foto->producao}}</p>
+                        <hr size="50">
+                        <p class="card-text"><strong>Categoria:</strong> {{$foto->categoria}}</p>
             </div>
         </div>
         <div class="quadross">

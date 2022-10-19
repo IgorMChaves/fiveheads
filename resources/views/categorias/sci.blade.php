@@ -80,7 +80,7 @@
         <div class="album py-5">
         <div class="container">
           <div class="row">
-            @foreach($foto as $foto)
+            @foreach($foto->where('categoria', '=', 'Sci') as $foto)
                 <div class="col-md-3">
                   <div class="card mb-4 shadow-sm">
                     <img src="/storage/{{$foto->arquivo}}" class="showImg"></img>

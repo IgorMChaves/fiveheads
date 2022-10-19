@@ -78,6 +78,18 @@
             </div>
 
             <div class="form-group text-left">
+              <label for="categoria">Categoria</label><br>
+              <select name="categoria">
+                <option value="Acao">Ação</option>
+                <option value="Comedia">Comédia</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Terror">Terror</option>
+                <option value="Sci">Sci-fi</option>
+                <option value="Drama">Drama</option>
+              </select>
+            </div>    
+
+            <div class="form-group text-left">
                  <label for="arquivo">Imagem</label><br>
                  <input type="file" name="arquivo" id="arquivo" accept="arquivo/*" required/>
             </div>            

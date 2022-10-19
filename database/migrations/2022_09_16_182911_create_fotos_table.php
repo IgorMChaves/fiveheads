@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('sinopse');
             $table->string('elenco');
             $table->string('producao');
+            $table->string('categoria');
             $table->string('arquivo');
             $table->timestamps();
         });

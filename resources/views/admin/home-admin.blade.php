@@ -46,8 +46,7 @@
       <section>
         <div class="btn-group">
           <a type="button" class="btn1 btn-sm btn-outline-primary" href="/formulario">Cadastrar um novo filme</a>
-          <form action="{{route('foto.search')}}" method="POST">
-            @csrf
+          <form action="{{route('foto.index')}}" method="GET">
             <div class="d-flex justify-content-between align-items-right">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
                 <input type="text" name="busca" class="form-control" placeholder="Buscar por título"></input>
               <div class="col d.flex align-items-end">
@@ -74,6 +73,7 @@
                       <p class="card-text"><strong>Sinopse:</strong> {{$foto->sinopse}}</p>
                       <p class="card-text"><strong>Elenco:</strong> {{$foto->elenco}}</p>
                       <p class="card-text"><strong>Produção:</strong> {{$foto->producao}}</p>
+                      <p class="card-text"><strong>Categoria:</strong> {{$foto->categoria}}</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                         <a type="button" class="btn btn-sm btn-outline-secondary" href="/filmes/{{$foto->id}}/edit">Editar</a>

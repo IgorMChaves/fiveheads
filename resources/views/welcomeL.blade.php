@@ -44,22 +44,25 @@
                 <div class="tags">
                     <ul>
                         <li>
-                            <a href="Acao.html">Ação</a>
+                            <a href="/acao">Ação</a>
                         </li>
                         <li>
-                            <a href="Comedia.html">Comedia</a>
+                            <a href="/comedia">Comedia</a>
                         </li>
                         <li>
-                            <a href="Sliceoflife.html">Slice of life</a>
+                            <a href="/sci-fi">Sci-fi</a>
                         </li>
                         <li>
-                            <a href="Terror.html">Terror</a>
+                            <a href="/drama">Drama</a>
                         </li>
                         <li>
-                            <a href="Scifi.html">Sci - fi</a>
+                            <a href="/terror">Terror</a>
                         </li>
                         <li>
-                            <a href="">Mais</a>
+                            <a href="/fantasia">Fantasia</a>
+                        </li>
+                        <li>
+                            <a href="/mostrarmais">Mais</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +74,7 @@
                 <li><img src="../../images/strangerT.png" alt="hotd"></li>
                 <li><img src="../../images/pizza.jpg" alt="pizza"></li>
                 <li><img src="../../images/image25.png" alt="it"></li>
-            </ul>
+            </ul><br>
             <button type="button" class="slider-nav"></button>
             <button type="button" class="slider-nav slider-nav-next"></button>
             <div class="slider-indicators">
@@ -86,28 +89,28 @@
                     <h1>Destaques</h1>
                 </div>
                 <article class="primeirofilme">
-                    <a href="obra/3">
-                        <div class="imagem">
-                        <img src="../../imagens/casa.jpg">
+                    <a href="obra/1">
+                        <div>
+                            <img class="imagemfilmes" src="../../images/stranger.jpg">
                         </div>
                         <div class="data">
-                            <h3>A Casa do Dragão<br> (2022)</h3>
+                            <h3>&nbsp;&nbsp;&nbsp;Stranger Things<br>&nbsp;&nbsp;&nbsp;(2022)</h3>
                         </div>
                     </a>
                 </article>
                 <article class="primeirofilme">
-                    <a href="/obra/1">
-                        <div class="imagem">
-                            <img src="../../images/heartstopper.png" alt="Luluzinha">
+                    <a href="/obra/2">
+                        <div>
+                            <img class="imagemfilmes" src="../../images/little.jpg" alt="Luluzinha">
                         </div>
                         <div class="data">
-                            <h3>Adoráveis Mulheres <br> (2019)</h3>
+                            <h3>&nbsp;&nbsp;&nbsp;Ruptura<br>&nbsp;&nbsp;&nbsp;(2022)</h3>
                         </div>
                     </a>
-                    <div class="mostrarmais">
-                        <a href="/mostrarmais" style="cursor: pointer;">Mostrar Mais</a>
-                    </div>
                 </article>
+                <div class="mostrarmais">
+                        <a href="/mostrarmais" style="cursor: pointer;">Mostrar Mais</a>
+                </div>
             </div>
             <div class="quadradocomunidades">
                 <div class="quadradodascomunidades">
@@ -162,7 +165,7 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  max-width: 1950px;
+  max-width: 100%;
   max-height: 100%;
 }
 
@@ -182,7 +185,6 @@ h1 {
     padding: 1rem;
 }
 .logosHeader{
-    position: relative;
     left: 9px;
     right: 6px;
     display: flex;
@@ -192,7 +194,7 @@ h1 {
     font-family: sans-serif;
 }
 .iconPer{
-    position: absolute;
+    position: relative;
     left: 79.15%;
     right: 17.34%;
     top: 1.81%;
@@ -321,14 +323,14 @@ a {
 .quadradodestaques{
     background-color: #3B4A52;
     position: relative;
-    border-radius: 5rem;
+    border-radius: 3rem;
     margin-right: 50px;
     margin-left: 80px;
     margin-top: 30px;
     max-width: 600px;
     max-height: 650px;
     width: 500px;
-    height: 400px;
+    height: 435px;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -371,7 +373,7 @@ a {
 .quadradocomunidades{
     background-color: #3B4A52;
     position: relative;
-    border-radius: 5rem;
+    border-radius: 3rem;
     margin-top: 0;
     margin-right: 50px;
     margin-left: 80px;
@@ -413,9 +415,11 @@ a {
     margin-top: 10px;
     margin-left: 150px ;
 }
+
 .quadros{
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     
 }
 
@@ -424,6 +428,13 @@ a {
     background-color: #23353E;
     margin-top: 50px;
     height: 50px;
+}
+
+.imagemfilmes{
+    margin-left: 50px;
+    width: 90px;
+    height: 130px;
+
 }
 
 </style>

@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Foto extends Model
 {
     use HasFactory;
-    protected $fillable = ['nomeObra', 'data', 'duracao', 'sinopse', 'elenco', 'producao', 'arquivo' ];
+    protected $fillable = ['nomeObra', 'data', 'duracao', 'sinopse', 'elenco', 'producao', 'categoria', 'arquivo' ];
+
 }

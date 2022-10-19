@@ -48,7 +48,7 @@ Route::post('/admin/logout',[ App\Http\Controllers\Auth\AdminLoginController::cl
 
 Route::get('/formulario', [App\Http\Controllers\ControladorFoto::class, 'create']);
 
-Route::get('/filmes', [App\Http\Controllers\ControladorFoto::class, 'index']);
+Route::get('/filmes', [App\Http\Controllers\ControladorFoto::class, 'index']) -> name('foto.index');
 Route::post('/filmes', [App\Http\Controllers\ControladorFoto::class, 'store']);
 
 Route::delete('/filmes/{foto}', [App\Http\Controllers\ControladorFoto::class, 'destroy']);
@@ -63,6 +63,21 @@ Route::get('/obra/{foto}', [App\Http\Controllers\ControladorFoto::class, 'show']
 
 Route::get('/mostrarmais', [App\Http\Controllers\ControladorFoto::class, 'indexmais']);
 Route::post('/mostrarmais', [App\Http\Controllers\ControladorFoto::class, 'storemais']);
+
+/* Rotas categorias*/
+
+Route::get('/acao', [App\Http\Controllers\ControladorFoto::class, 'indexacao']);
+Route::post('/acao', [App\Http\Controllers\ControladorFoto::class, 'storeacao']);
+Route::get('/drama', [App\Http\Controllers\ControladorFoto::class, 'indexdrama']);
+Route::post('/drama', [App\Http\Controllers\ControladorFoto::class, 'storedrama']);
+Route::get('/comedia', [App\Http\Controllers\ControladorFoto::class, 'indexcomedia']);
+Route::post('/comedia', [App\Http\Controllers\ControladorFoto::class, 'storecomedia']);
+Route::get('/terror', [App\Http\Controllers\ControladorFoto::class, 'indexterror']);
+Route::post('/terror', [App\Http\Controllers\ControladorFoto::class, 'storeterror']);
+Route::get('/fantasia', [App\Http\Controllers\ControladorFoto::class, 'indexfantasia']);
+Route::post('/fantasia', [App\Http\Controllers\ControladorFoto::class, 'storefantasia']);
+Route::get('/sci-fi', [App\Http\Controllers\ControladorFoto::class, 'indexsci']);
+Route::post('/sci-fi', [App\Http\Controllers\ControladorFoto::class, 'storesci']);
 
 /* Rotas seearch*/
 Route::post('/filmes/search', [App\Http\Controllers\ControladorFoto::class, 'search']) -> name ('foto.search') ;
