@@ -20,7 +20,7 @@
             <div class="upperHead">
                 <div>
                     <p>
-                        <a href="principal.html">Lumière</a>
+                        <a href="/">Lumière</a>
                     </p>
                 </div>
                 <form action="#" method="post">
@@ -61,24 +61,26 @@
     </header>
 
     <main>
-
         <div class="quadradodasinopse">
 
             <div class="objetosdentrodasinopse">
                 <div>
                     <div class="title">
-                      <p class="nomezinho"><strong>{{$foto->nomeObra}}</strong> </p><br>
+                      <p class="nomezinho"><strong>{{$foto->nomeObra}}</strong> </p>
                     </div>
                 </div>
             </div>
             
             <div class="imgsi">
+            <div class="quadradodoquadrado">
                <div class="quadradoimg">
                 <img class="showImg" src="/storage/{{$foto->arquivo}}"></img>
               </div>
             </div>
+            </div>
 
             <div class="sisi">
+            <div>
                         <p class="card-text"><strong>Lançamento:</strong> {{$foto->data}}</p>
                         <hr size="50">
                         <p class="card-text"><strong>Duração:</strong> {{$foto->duracao}}</p>
@@ -90,17 +92,18 @@
                         <p class="card-text"><strong>Produção:</strong> {{$foto->producao}}</p>
                         <hr size="50">
                         <p class="card-text"><strong>Categoria:</strong> {{$foto->categoria}}</p>
+               </div>
             </div>
         </div>
         <div class="quadross">
 
             <div class="quadradoavaliacoes">
                 <div class="quadradodoavaliacoes">
-                    <h1>Avaliações</p>
+                    <h1>Avaliações</h1>
                 </div>
                 <div class="dataava">
-                    <p> Sua Avaliação: </p>
-                <ul class="avaliacao">
+                <p>Sua avaliação :</p>
+                <ul class="avaliacao"> 
                     <li class="star-icon ativo" data-avaliacao="1"></li>
                     <li class="star-icon" data-avaliacao="2"></li>
                     <li class="star-icon" data-avaliacao="3"></li>
@@ -112,13 +115,13 @@
                 <br>
             </div>            
             <div class="quadradocomentario">
-                <div class="quadradocomentario">
+                <div class="quadradodoquadradocomentario">
                     <h1>Comentários</h1>
                 </div>
             </div>
                 
         </div>
-
+        
     </main>
     <footer>
         <div class="rodape">
@@ -134,13 +137,13 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  max-width: 1950px;
+  max-width: 100%;
   max-height: 100%;
 }
 
 h1 {
   text-align: center;
-  margin: 1em 0;
+  margin: 0.5em 0.5m;
   font-family: sans-serif;
 }
 
@@ -185,6 +188,7 @@ h1 {
 main{
     display: grid;
     grid-template-columns: auto auto;
+    padding: 30px;
 }
 
 h2 {
@@ -226,11 +230,18 @@ form input{
   color: white;
   font-size: 2rem;
   margin-top: 10px;
+  width:500px;
 }
 
+.objetosdentrodasinopse{
+  height:80px;
+  padding:10px;
+  max-width:500px;
+}
 .nomezinho{
     font-size: 32px;
     margin-left: 10px;
+    width: 500px;
 }
 
 
@@ -262,14 +273,23 @@ a {
   background-color: black;
 }
 
+.imgsi{
+  max-width:100%;
+  align-items:center;
+  padding:10px;
+}
+
 .quadradodasinopse{
   background-color: #3B4A52;
   margin-top: 30px;
-  margin-left: 10px;
   border-radius: 10px;
-  height: 740px;
+  height:800px;
   width: 800px;
+  margin-left:10px;
   max-width: 100%;
+  max-height: 100%;
+  padding:20px;
+  align-items: center;
 }
 
 .quadradodasinopse h2{
@@ -278,33 +298,28 @@ a {
   color: white;
 }
 
-.title a{
-  color: white;
-  font-size: 2rem;
-  margin-top: 10px;
-}
-
-
-.imgsi{
-  margin-left: 130px;
-  margin-top: 50px;
-  align-items: center;
+.title a{quadradoimg
   padding: 5px;
 }
+
 .showImg{
   width: 500px;
-  height: 300px;
-  margin-left: 150px;
-  margin-top:0px;
+  height: 500px;
+}
+
+
+.quadradodoquadrado{
+  width: 500px;
+  align-items: center;
+  margin-left: 100px;
+  max-width:500px;
 }
 
 .quadradoimg{
-  align-items: center;
-  padding: 5px;
-  width: 200px;
-  height: 300px;
-  max-width: 200px;
-  margin-bottom:20px;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+  
 }
 
 .sisi{
@@ -314,23 +329,27 @@ a {
   color: white;
   line-height: 1.5;
   font-size: 20px;
+  padding:10px;
+  max-height:100%;
 }
 
 .quadross{
   margin-top: 30px;
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: 50px ;
+  margin-left: 20px ;
   max-width: 1200px;
   height: 800px;
 }
 .quadradoavaliacoes{
   width: 1000px;
-  height: 200px;
+  height: 250px;
+  padding:10px;
   background-color: #3B4A52;
   border-radius: 10px;
   color: white;
+  max-width:100%;
+  max-height:100%;
 }
 
 .dataava{
@@ -338,14 +357,21 @@ a {
   font-size: medium;
   margin-top: 20px;
   height: 50px;
-  width: 150px;
+  width: 400px;
   max-width: 200px;
 }
 
 .avaliacao{
   display: flex;
-  width: 250px;
+  flex-direction:row;
+  width: 400px;
   float: left;
+}
+
+.avaliacao .p{
+  display: flex;
+  flex-direction: inline;
+  width: 200px;
 }
 
 .star-icon{
@@ -368,18 +394,27 @@ a {
   content: "\2606";
 }
 
+.quadradodoavaliacoes{
+  padding:10px;
+  height:80px;
+}
+
 .quadradocomentario{
   width: 1000px;
-  height: 480px;
-  margin-top: 27px;
+  height: 600px;
+  max-width:100%;
+  max-height:100%;
+  margin-top: 20px;
   background-color: #3B4A52;
   border-radius: 10px;
   color: white;
 }
-
+.quadradodoquadradocomentario{
+  padding:10px;
+} 
 
 .rodape{
   background-color: #23353E;
-  margin-top: 1px;
+  margin-top: 30px;
   height: 50px;
 }

@@ -15,7 +15,7 @@ class ControladorFoto extends Controller
      */
     public function index(Request $request)
     {   
-        $search = $request->search;
+        $search = $request->query('busca');
         $foto = Foto::where(function ($query) use ($search) {
             $query->where('nomeObra', 'LIKE', "%{$search}%");
         })->get();

@@ -80,4 +80,3 @@ Route::get('/sci-fi', [App\Http\Controllers\ControladorFoto::class, 'indexsci'])
 Route::post('/sci-fi', [App\Http\Controllers\ControladorFoto::class, 'storesci']);
 
 /* Rotas seearch*/
-Route::post('/filmes/search', [App\Http\Controllers\ControladorFoto::class, 'search']) -> name ('foto.search') ;

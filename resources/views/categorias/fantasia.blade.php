@@ -25,7 +25,7 @@
                 <div class="upperHead">
                   <div>
                      <p>
-                      <a href="">Lumière</a>
+                      <a href="/">Lumière</a>
                     </p>
                   </div>
                     <form action="#" method="post">
